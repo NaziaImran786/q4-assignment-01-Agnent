@@ -45,3 +45,41 @@ Some systems combine both, like an AI agent that uses generative AI to draft ema
 
 Future Outlook:
 Agentic AI is a major focus in AI research (e.g., OpenAI’s work on autonomous agents, DeepMind’s adaptive systems). As it evolves, governance frameworks will be crucial to ensure safe and beneficial deployment.
+
+#-------------------------------------------------------------------------------------------
+
+OpenAI Agents SDK:
+
+The OpenAI Agents SDK is a lightweight, Python-first framework for building “agentic” AI applications. At its core, it provides a small set of primitives—Agents (LLMs configured with instructions and optional tools), Handoffs (delegation between agents), and Guardrails (input/output validation)—plus built-in tracing so you can visualize, debug, and evaluate multi-agent workflows. 
+
+Why Use the Agents SDK?
+
+Orchestration of Complex Tasks: Rather than a single LLM responding to prompts, you can coordinate multiple specialized agents to work together toward a goal.
+
+Minimal Learning Curve: The SDK wraps common patterns (tool calls, delegation, validation) in a small, consistent API, letting you move from prototype to production without wrestling with dozens of abstractions.
+
+Provider-Agnostic: While optimized for OpenAI’s own Responses and Chat Completions APIs, it also supports 100+ other LLM providers, making it easy to switch or experiment with different models.
+
+Key Benefits
+
+Modularity & Reuse:
+
+Define discrete agents with clear responsibilities and tools.
+
+Delegate tasks automatically via handoffs, reducing bespoke orchestration code.
+
+Built-In Observability:
+
+Automatic tracing of each agent run, so you can inspect prompts, responses, tool calls, and decisions in a UI.
+
+Safety & Validation:
+
+Guardrails enforce schema or content rules on inputs/outputs, reducing unexpected behavior.
+
+Rapid Iteration:
+
+Python-first design means you can leverage your existing Python ecosystem (unit tests, packaging, deployment) to build and ship agents quickly.
+
+Production-Readiness:
+
+Production-ready features (logging, tracing, evaluation hooks) are included out of the box, unlike early experimental libraries.
